@@ -1,3 +1,4 @@
+  
 numpy
 scipy
 scikit-learn
@@ -5,6 +6,6 @@ matplotlib
 pandas
 fastapi
 uvicorn
-gunicorn
+gunicorn==19.9.0
 uvloop
 httptools

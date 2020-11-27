@@ -1,5 +1,6 @@
 from os import name
 from fastapi import FastAPI
+import uvicorn
 
 import pandas as pd
 import numpy as np
@@ -37,3 +38,6 @@ async def predict_banknote(data: BankNote):
     return {
         "prediction": prediction
     }
+
+if __name__ == '__main__':
+    uvicorn.run(app, host='127.0.0.1', port=8000)

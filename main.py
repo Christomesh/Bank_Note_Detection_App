@@ -24,6 +24,8 @@ async def index():
 async def get_name(name: str):
     return {"Your are welcome": f"{name}"}
 
+
+
 @app.post('/predict')
 async def predict_banknote(data: BankNote):
     data = data.dict()
@@ -40,5 +42,5 @@ async def predict_banknote(data: BankNote):
         "prediction": prediction
     }
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
+# if __name__ == '__main__':
+#     uvicorn.run(app, host='127.0.0.1', port=8000)

@@ -1,7 +1,9 @@
 from pydantic import BaseModel
 
+
 class BankNote(BaseModel):
-    variance: float
-    skewness: float
+    variance: float 
+    skewness: float 
     curtosis: float
-    entropy: float
+    entropy: float 
+

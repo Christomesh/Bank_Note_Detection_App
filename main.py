@@ -15,13 +15,14 @@ app = FastAPI()
 pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 pickle_in.close()
+
 @app.get('/')
 async def index():
     return {"Welcome": "To my BankNotes App"}
 
 @app.get('/{name}')
 async def get_name(name: str):
-    return {"Welcome": f"{name}"}
+    return {"Your are welcome": f"{name}"}
 
 @app.post('/predict')
 async def predict_banknote(data: BankNote):

@@ -4,4 +4,4 @@
 ### View App [Here](https://bank-note-fastapi.herokuapp.com/docs#/default/predict_banknote_predict_post)
 
 ### App Demo
-![App demo](demo/demo.gif)
+![App demo](demo/ezgif.com-gif-maker2.gif)
